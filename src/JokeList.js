@@ -78,8 +78,7 @@ class JokeList extends Component {
                     <h1 className="JokeList-title"><span>Dad</span> Jokes</h1>
 
                     <img src='https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg' alt="icon" />
-                    <button className="addMore" onClick={this.getNewJokes}>New Jokes</button>
-                    <button onClick={window.localStorage.clear()}>Clear</button>
+                    <button className="JokeList-getMore" onClick={this.getNewJokes}>New Jokes</button>
                 </div>
                 <div className="JokeList-jokes">
                     {jokes.map(j => (
